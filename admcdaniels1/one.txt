@@ -1,0 +1,70 @@
+Insert record tests
+
+
+
+*****Test 1************************************************************
+	Try to insert into a database where no .db or .ss file exists
+
+./permis.sh: line 13: [: =: unary operator expected
+The file doctor is not readable.
+	PASSED: insert.sh doctor when no doctor.(db | ss) file exists
+
+
+***********************************************************************
+
+
+*****Test 2************************************************************
+	Insert into a valid database, containing 17 fields
+
+Enter values for a b c d e f g h i j k l m n o p q:
+Record added to "students" database.
+	PASSED: insert.sh students -- 17 fields
+
+
+***********************************************************************
+
+
+*****Test 3************************************************************
+	Insert into a valid database, containing 4 fields
+
+Enter values for name age weight num92:
+Record added to "student" database.
+	PASSED: insert.sh student -- 4 fields
+
+
+***********************************************************************
+
+
+*****Test 4************************************************************
+	Insert into a valid database, containing 4 fields
+
+Enter values for test1 test2 test3 test4:
+Record added to "doctors" database.
+	PASSED: insert.sh doctors -- 4 fields
+
+
+***********************************************************************
+
+
+*****Test 5************************************************************
+	Insert into a valid spreadsheet, containing 4 fields
+
+Enter values for exam1 exam2 exam3 exam4:
+Record added to "test" spreadsheet.
+	PASSED: insert.sh test -- 4 fields
+
+
+***********************************************************************
+
+
+*****Test 6************************************************************
+	Insert into a valid spreadsheet, containing 8 fields
+
+Enter values for exam1 exam2 exam3 exam4 exam5 exam6 exam7 exam8:
+Record added to "tests" spreadsheet.
+	PASSED: insert.sh test -- 4 fields
+
+
+***********************************************************************
+Passed 6 out of 6
+***********************************************************************

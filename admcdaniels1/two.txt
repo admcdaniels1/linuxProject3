@@ -1,0 +1,112 @@
+
+
+ Delete records Tests
+
+
+
+
+*****Test 1******************************************************
+	Try to delete a field from a valid database, but the field is
+	not a valid field within the database
+
+Error: Field five does not exist in one.db
+	PASSED: delete.sh one five 2-- no 'five' field exists
+
+
+*****************************************************************
+
+
+*****Test 2******************************************************
+	Valid deletion, should report 2 records deleted
+
+Success: 2 record(s) were deleted
+	PASSED: delete.sh one one 1  -- delete 2 records
+
+
+*****************************************************************
+
+
+*****Test 3******************************************************
+	Valid deletion, should report 1 record deleted
+
+Success: 1 record(s) were deleted
+	PASSED: delete.sh one four 4 -- deletes 1 record
+
+
+*****************************************************************
+
+
+*****Test 4******************************************************
+	Valid deletion, should report 2 records deleted
+
+Success: 1 record(s) were deleted
+2d1
+< 1 2 3 4
+	FAILED: delete.sh two 3 3 -- deletes 2 records
+
+
+*****************************************************************
+
+
+*****Test 5******************************************************
+	Valid deletion, should report 0 records deleted
+
+Success: 1 record(s) were deleted
+1a2
+> 1 2 3 4
+	FAILED: delete.sh two 2 4 -- deletes 0 record
+
+
+*****************************************************************
+
+
+*****Test 6******************************************************
+	Valid deletion, should report 11 records deleted
+
+Success: 11 record(s) were deleted
+	PASSED: delete.sh spreadsheet 8 -- deletes 11 records
+
+
+*****************************************************************
+
+
+*****Test 7******************************************************
+	Valid deletion, should report 2 records deleted
+
+Success: 2 record(s) were deleted
+	PASSED: delete.sh three spreadsheets 8 -- deletes 2 records
+
+
+*****************************************************************
+
+
+*****Test 8******************************************************
+	Valid deletion, should delete 2 records
+
+Success: 2 record(s) were deleted
+	PASSED: delete.sh cs462 c 3 -- deletes 2 records
+
+
+*****************************************************************
+
+
+*****Test 9******************************************************
+	Invalid deletion, should delete nothing
+
+Error: Cannot delete field total in a spreadsheet
+	PASSED: delete.sh cs462 total 100 -- deletes nothing
+
+
+*****************************************************************
+
+
+*****Test 10*****************************************************
+	Valid deletion, should delete  1 record
+
+Success: 1 record(s) were deleted
+	PASSED: delete.sh cs151 exam3 100 -- deletes 1 record
+
+
+*****************************************************************
+Passed 8 out of 10
+*****************************************************************

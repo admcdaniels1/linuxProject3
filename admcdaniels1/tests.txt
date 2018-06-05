@@ -1,0 +1,14 @@
+Andrew McDaniels & April Crawford
+11/3/2017
+Project 4
+
+We tested numerous blank files/missing files for all three scripts. We also
+tested how well the scripts ran with odd values in the fields and data. Blank
+didn't affect print, however impossible to enter blank lines into insert. 
+Delete ignores them. Calling print with any number of arugments works, however
+if a fieldname is specified that doesn't exist it throws an error. 
+Both "./print CS492 -r -r field" and "./print CS492 -n -n field" work because
+sort can handle being based those duplicated flags. Insert requires that you 
+enter the same number of values as there are fields, none can be left blank.
+Delete will not delete based on field total for spreadsheets, however works
+fine for databases.

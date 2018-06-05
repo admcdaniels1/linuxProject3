@@ -1,0 +1,15 @@
+Name(s):April C and Andrew M
+
+insert(24):
+    see one.txt
+
+delete(40): -8
+    see two.txt
+
+print (30):
+
+
+Test file (6):
+--------------------------
+
+Total (100): 92
